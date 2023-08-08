@@ -1,6 +1,6 @@
 image:
-  repository: nginx
-  tag: stable
+  repository: quay.io/jitesoft/nginx
+  tag: latest
   pullPolicy: IfNotPresent
 
 service:
