@@ -1,26 +1,8 @@
-open5gs:
-  image:
-    repository: registry.gitlab.com/infinitydon/registry/open5gs-aio
-    pullPolicy: IfNotPresent
-    tag: "v2.2.2"
-webui:
-  image:
-    repository: registry.gitlab.com/infinitydon/registry/open5gs-webui
-    pullPolicy: IfNotPresent
-    tag: "v2.2.2"
-  ingress:
-    enabled: false
+image:
+  repository: nginx
+  tag: stable
+  pullPolicy: IfNotPresent
 
-    hosts:
-      - name: open5gs-epc.local
-        paths: ["/"]
-        tls: false
-dnn: internet  
-amf:
-  mcc: 208
-  mnc: 93
-  tac: 7
-k8s:
- interface: eth0
- firstupfadvertise: 10.253.16.81
- secondupfadvertise: 10.253.16.82
+service:
+  type: ClusterIP
+  port: 80
