@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  sample-helm:
+  - apiVersion: v1
+    appVersion: 1.16.0
+    created: "2023-08-08T04:35:12.58903329Z"
+    description: A Helm chart for nginx
+    digest: c71675e7bc3df807a87510bbbd6a9d85a7f6c77da69e93a0a811c4094f3ba303
+    name: sample-helm
+    type: application
+    urls:
+    - https://poojithavaddi.github.io/helm-repo/sample-helm-0.0.1.tgz
+    version: 0.0.1
+generated: "2023-08-08T04:35:12.587890644Z"
