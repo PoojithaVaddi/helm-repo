@@ -1,5 +1,11 @@
-containers:
-  - name: {{ .Chart.Name }}
-    image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-    ports:
-      - containerPort: 80
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: nginx-deploy
+  namespace: test-helm-ns
+spec:
+  containers:
+    - name: {{ .Chart.Name }}
+      image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+      ports:
+        - containerPort: 80
