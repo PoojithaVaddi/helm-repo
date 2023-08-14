@@ -3,12 +3,12 @@ entries:
   sample-helm:
   - apiVersion: v1
     appVersion: 1.16.0
-    created: "2023-08-08T04:35:12.58903329Z"
+    created: "2023-08-14T13:57:59.274343517Z"
     description: A Helm chart for nginx
-    digest: c71675e7bc3df807a87510bbbd6a9d85a7f6c77da69e93a0a811c4094f3ba303
+    digest: 478e7cb48e9a0f74190c58a37a8cd3ab6b0e11a78fd47d1d47318edc7fcf3c15
     name: sample-helm
     type: application
     urls:
     - https://poojithavaddi.github.io/helm-repo/sample-helm-0.0.1.tgz
     version: 0.0.1
-generated: "2023-08-08T04:35:12.587890644Z"
+generated: "2023-08-14T13:57:59.273249089Z"
